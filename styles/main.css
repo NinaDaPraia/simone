@@ -1,0 +1,91 @@
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+  font-family: "Open Sans", "Microsoft YaHei", "Hiragino Sans GB", "Hiragino Sans GB W3", "微软雅黑", "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6em;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+}
+
+.card-item-page {
+  height: 250px;
+  margin-bottom: 90px;
+  padding-bottom: 34px;
+}
+
+.btn-card-item-page, .btn.btn-card-item-page {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.btn.btn-search{
+  background-color: transparent;
+}
+
+.list-inline.inline-block {
+  display: inline-block;
+}
+
+.list-inline.inline-block .btn-card-item-page {
+  margin-top: -13px;
+  margin-bottom: initial;
+}
+
+.card-item-image {
+  border: 10px solid #FFF;
+  box-shadow: 0 0 10px #9D9797;
+}
+
+.card-item-title {
+  color: #FFF;
+  font-size: 50px;
+  text-shadow: 2px 2px #969393;
+}
+
+.card-item-options {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.feminismo, .btn.feminismo, .card.hovercard .cardheader.feminismo {
+  background-color: #EF5BA1;
+}
+
+.lgbt, .btn.lgbt, .card.hovercard .cardheader.lgbt {
+  background-color: #26BDCF;
+}
+
+.quilombolas, .btn.quilombolas, .card.hovercard .cardheader.quilombolas {
+  background-color: #F8A050;
+}
+
+.default-movement, .btn.default-movement, .card.hovercard .cardheader.default-movement {
+  background-color: #0097a7;
+}
+
+
+@media @media (max-width: 768px) {
+
+  .card-item-option:eq(1), .card-item-option:eq(2) {
+    width: 50%;
+    min-width: 150px;
+  }
+  .card-item-option:eq(3) {
+    width: 100%;
+    min-width: 300px;
+  }
+
+  .list-inline.inline-block .btn-card-item-page {
+    width: 100%;
+    min-width: 100%;
+  }
+
+}
