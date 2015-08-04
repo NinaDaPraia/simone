@@ -1,0 +1,41 @@
+<html ng-app="myApp">
+    <head>
+        <title>Miss Simone tells stories...</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/cards.css">
+        <link rel="stylesheet" href="styles/navbar.css">
+        <script src="/node_modules/angular/angular.js"></script>
+        <script src="node_modules/lodash/index.js"></script>
+        <script src="node_modules/restangular/dist/restangular.js"></script>
+        <script src="app/app.js"></script>
+    </head>
+    <body>
+        <div ng-controller="getInfluentialFigures">
+            <div ng-repeat="figure in figures">
+
+                <li id={{figure.id}} class="col-lg-4 col-sm-4">
+                    <div class="card hovercard">
+                      <div class="cardheader {{figure.socialMovement}}"></div>
+                      <div class="card-info">
+                        <div class="title">
+                            {{figure.name}}
+                        </div>
+                        <div class="desc">
+                            {{figure.description}}
+                        </div>
+                      </div>
+                      <div class="card-bottom">
+                          {{figure.socialMovement}}
+                        <br/>
+                        <br/>
+                        <Link class="btn btn-sm {{figure.socialMovement}}" href="">
+                            + MORE
+                        </Link>
+                      </div>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+    </body>
+</html>
