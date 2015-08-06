@@ -1,1 +1,1 @@
-angular.module('SimoneApp', []);
+angular.module('SimoneApp', ['InfluentialFigures']);
