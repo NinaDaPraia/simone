@@ -7,6 +7,8 @@
     - AngularJS 1.4.3
     - Lodash (Restangular's dependency)
     - Restangular
+    - Grunt
+    - Grunt-ng-constant
     - [SnapCI](http://snap-ci.com)
 
 # Project's Structure
@@ -21,5 +23,13 @@
     
 # Start development
 Run the command 'npm install' for get all dependencies in your environment.
-To run tests written using Jasmine, use the command 'npm test' or 'karma start'.
+To run tests written using Jasmine, use the command 'grunt test' or 'karma start'.
+
+If the grunt command raise 'command not found', try install grunt-cli, like this: 'npm install -g grunt-cli'.
+
+# Commands for SnapCI
+- npm install
+- npm install -g grunt-cli
+- grunt test
+
 
