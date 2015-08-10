@@ -17,8 +17,5 @@
     "karma": "0.13.3 ",
     "karma-jasmine": "0.3.6",
     "karma-phantomjs-launcher": "0.2.0"
-  },
-  "scripts": {
-    "test": "karma start --single-run"
   }
 }
