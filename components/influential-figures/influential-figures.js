@@ -1,1 +1,1 @@
-angular.module('InfluentialFigures', ['restangular']);
+angular.module('InfluentialFigures', ['restangular', 'config']);

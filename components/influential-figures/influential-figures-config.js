@@ -1,6 +1,6 @@
 angular.module('InfluentialFigures')
-.config(function(RestangularProvider){
-    RestangularProvider.setBaseUrl('http://0.0.0.0:8000');
+.config(function(RestangularProvider, ENV){
+    RestangularProvider.setBaseUrl(ENV.apiEndpoint);
     RestangularProvider.setDefaultHeaders({
         'Content-Type': 'application/json',
         'X-Requested-With': 'XMLHttpRequest'
